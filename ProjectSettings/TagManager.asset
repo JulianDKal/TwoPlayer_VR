@@ -9,6 +9,8 @@ TagManager:
   - Anchor
   - PlayerHand
   - Destroyer
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
