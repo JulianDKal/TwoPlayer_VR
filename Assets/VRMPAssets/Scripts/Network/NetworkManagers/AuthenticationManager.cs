@@ -22,7 +22,7 @@ namespace XRMultiplayer
     public class AuthenticationManager : MonoBehaviour
     {
         const string k_DebugPrepend = "<color=#938FFF>[Authentication Manager]</color> ";
-
+        
         /// <summary>
         /// The argument ID to search for in the command line args.
         /// </summary>

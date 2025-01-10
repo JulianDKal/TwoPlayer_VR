@@ -2238,6 +2238,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea19922b82dabe40a403fd57e0be887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObjects1:
+  - {fileID: 919132148201182538}
+  playerObjects2:
+  - {fileID: 2016410391}
+  - {fileID: 2800250517800536775}
 --- !u!4 &911979649
 Transform:
   m_ObjectHideFlags: 0
@@ -8548,6 +8553,8 @@ GameObject:
   - component: {fileID: 2259951902954785019}
   - component: {fileID: 529341369790688625}
   - component: {fileID: 3616844112653622874}
+  - component: {fileID: 7715626667764184551}
+  - component: {fileID: 7715626667764184552}
   m_Layer: 0
   m_Name: "B\xE9zierCurve"
   m_TagString: Untagged
@@ -8555,6 +8562,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7715626667764184551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7715626667764184550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1224635871
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &7715626667764184552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7715626667764184550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8632566a277b2a949873add2c7918070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7735164445780563787
 GameObject:
   m_ObjectHideFlags: 0
