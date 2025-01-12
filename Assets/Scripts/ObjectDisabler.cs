@@ -19,6 +19,7 @@ public class ObjectDisabler : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         Debug.Log("||||||||||| ObjectDisabler OnNetworkSpawned for Player" + (NetworkManager.Singleton.LocalClientId + 1));
+        if(IsHost) Debug.Log("||||||||||||||||||| I am a host!");
         if(NetworkManager.Singleton.LocalClientId == 0) DisableObjectsFromPlayer2(); //disable all player 2 objects
         else DisableObjectsFromPlayer1();
         base.OnNetworkSpawn();
