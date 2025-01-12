@@ -6462,6 +6462,7 @@ GameObject:
   - component: {fileID: 5611090095229796388}
   - component: {fileID: 5611090095229796390}
   - component: {fileID: 5611090095229796389}
+  - component: {fileID: 5611090095229796391}
   m_Layer: 0
   m_Name: drawer1
   m_TagString: Untagged
@@ -8058,10 +8059,23 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 0
+--- !u!114 &5611090095229796391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930622130909974523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81475e7261acf154296e0cc8ef5f7a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOffset: 6
 --- !u!23 &5765678889219029553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8819,6 +8833,7 @@ GameObject:
   - component: {fileID: 7735164445780563789}
   - component: {fileID: 7735164445780563788}
   - component: {fileID: 7735164445780563790}
+  - component: {fileID: 7735164445780563791}
   m_Layer: 0
   m_Name: drawer2
   m_TagString: Untagged
@@ -9078,6 +9093,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &7735164445780563791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735164445780563787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81475e7261acf154296e0cc8ef5f7a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOffset: 0.29
 --- !u!23 &7743480365228167480
 MeshRenderer:
   m_ObjectHideFlags: 0
