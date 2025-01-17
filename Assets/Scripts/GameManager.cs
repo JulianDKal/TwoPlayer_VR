@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public int puzzleOneScore = 0;
+    public int puzzlesSolved = 0;
 
     private void Start()
     {

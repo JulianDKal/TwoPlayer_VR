@@ -1,16 +1,18 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class LockScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject chain;
+    public void KeyInserted(SelectEnterEventArgs args)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        chain.SetActive(false);
+        GameManager.instance.puzzlesSolved++;
+        if (GameManager.instance.puzzlesSolved >= 3)
+        {
+            EventManager.instance.allPuzzlesCompleted();
+        }
+        args.interactableObject.transform.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }
