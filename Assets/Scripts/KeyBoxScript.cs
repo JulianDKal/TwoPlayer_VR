@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class KeyBoxScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject key;
     void Start()
     {
         EventManager.instance.puzzleOneCompletedEvent += DisableMe;
+        BoxCollider keyCollider = key.GetComponent<BoxCollider>();
+        BoxCollider myCollider = gameObject.GetComponent<BoxCollider>();
+        
+        Physics.IgnoreCollision(myCollider, keyCollider);
     }
 
     void DisableMe()
