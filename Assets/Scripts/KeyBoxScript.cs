@@ -6,10 +6,14 @@ public class KeyBoxScript : MonoBehaviour
     void Start()
     {
         EventManager.instance.puzzleOneCompletedEvent += DisableMe;
-        BoxCollider keyCollider = key.GetComponent<BoxCollider>();
         BoxCollider myCollider = gameObject.GetComponent<BoxCollider>();
+        BoxCollider[] colliders = key.GetComponents<BoxCollider>();
+        foreach (BoxCollider keyCollider in colliders)
+        {
+            Physics.IgnoreCollision(myCollider, keyCollider);
+            //Debug.Log($"Found BoxCollider: {collider}");
+        }
         
-        Physics.IgnoreCollision(myCollider, keyCollider);
     }
 
     void DisableMe()
