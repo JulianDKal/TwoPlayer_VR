@@ -18,7 +18,7 @@ public class FinalDoorScript : MonoBehaviour
 
     private void AllPuzzlesCompleted()
     {
-        Debug.Log("All Puzzles Completed");
+        Debug.Log("All puzzles completed, final door is open!!");
         handleCollider.enabled = true;
         rigidbody.constraints = RigidbodyConstraints.None;
         EventManager.instance.allPuzzlesCompletedEvent -= AllPuzzlesCompleted;

@@ -22,6 +22,8 @@ public class EventManager : MonoBehaviour
 
     public void allPuzzlesCompleted()
     {
+        Debug.Log("all puzzles completed!");
+        if(allPuzzlesCompletedEvent == null) Debug.Log("all puzzles completed event already empty");
         allPuzzlesCompletedEvent?.Invoke();
     }
 }

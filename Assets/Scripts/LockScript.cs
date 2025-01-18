@@ -1,18 +1,57 @@
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class LockScript : MonoBehaviour
+public class LockScript : NetworkBehaviour
 {
     public GameObject chain;
     public void KeyInserted(SelectEnterEventArgs args)
     {
+        Debug.Log("Key inserted");
         chain.SetActive(false);
-        GameManager.instance.puzzlesSolved++;
-        if (GameManager.instance.puzzlesSolved >= 3)
+
+        if (IsServer)
         {
-            EventManager.instance.allPuzzlesCompleted();
+            GameManager.instance.UpdatePuzzlesSolved();
         }
-        args.interactableObject.transform.gameObject.SetActive(false);
+        else SubmitPuzzleScoreServerRpc();
+        
+        // if (GameManager.instance.PuzzlesSolved.Value >= 1)
+        // {
+        //     EventManager.instance.allPuzzlesCompleted();
+        // }
+        args.interactableObject.transform.gameObject.SetActive(false); //set key to inactive
+        
+        if (IsServer)
+        {
+            DisappearLock();
+        }
+        else KeyInsertedServerRpc();
+        
+    }
+    
+    [ServerRpc(RequireOwnership = false)]
+    private void SubmitPuzzleScoreServerRpc()
+    {
+        GameManager.instance.UpdatePuzzlesSolved();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void KeyInsertedServerRpc()
+    {
+        DisappearLock();
+    }
+
+    private void DisappearLock()
+    {
+        NetworkObject networkObject = gameObject.GetComponent<NetworkObject>();
+        NetworkObject chainNetworkObject = chain.GetComponent<NetworkObject>();
+        
+        if (networkObject != null)
+        {
+            networkObject.Despawn(true);
+        }
+        if (chainNetworkObject != null) chainNetworkObject.Despawn(true);
         this.gameObject.SetActive(false);
     }
 }
