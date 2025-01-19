@@ -30,7 +30,7 @@ public class GameManager : NetworkBehaviour
 
         PuzzlesSolved.OnValueChanged += (oldValue, newValue) =>
         {
-            if (newValue >= 1)
+            if (newValue >= 3)
             {
                 EventManager.instance.allPuzzlesCompleted();
             }
