@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation;
 
@@ -11,12 +12,14 @@ namespace XRMultiplayer
         [SerializeField] Vector3 onlinePosition = new Vector3(0, .15f, 0);
         TeleportationProvider m_TeleportationProvider;
         Vector3 m_ResetPosition;
+        public Transform m_resetPos;
+        public Transform newResetPos;
         private void Start()
         {
             XRINetworkGameManager.Connected.Subscribe(UpdateResetPosition);
             m_TeleportationProvider = GetComponentInChildren<TeleportationProvider>();
 
-            m_ResetPosition = offlinePosition;
+            m_ResetPosition = m_resetPos.position;
             ResetPlayer();
         }
 
@@ -79,6 +82,14 @@ namespace XRMultiplayer
         void SetPlayerToOfflinePosition()
         {
             ResetPlayer(offlinePosition);
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("SpawnPointChanger"))
+            {
+                m_ResetPosition = newResetPos.position;
+            }
         }
     }
 }
