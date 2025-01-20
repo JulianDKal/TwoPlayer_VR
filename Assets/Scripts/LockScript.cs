@@ -5,10 +5,13 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class LockScript : NetworkBehaviour
 {
     public GameObject chain;
+    public GameObject chain2;
+    
     public void KeyInserted(SelectEnterEventArgs args)
     {
         Debug.Log("Key inserted");
         chain.SetActive(false);
+        chain2.SetActive(false);
 
         if (IsServer)
         {
