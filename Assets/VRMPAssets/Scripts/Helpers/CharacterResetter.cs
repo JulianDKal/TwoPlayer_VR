@@ -21,6 +21,7 @@ namespace XRMultiplayer
 
             m_ResetPosition = m_resetPos.position;
             ResetPlayer();
+            m_ResetPosition = newResetPos.position;
         }
 
         void UpdateResetPosition(bool connected)
@@ -89,6 +90,7 @@ namespace XRMultiplayer
             if (other.CompareTag("SpawnPointChanger"))
             {
                 m_ResetPosition = newResetPos.position;
+                Debug.Log("Reset Respawn Position");
             }
         }
     }
