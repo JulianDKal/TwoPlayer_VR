@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Audioplayer : MonoBehaviour
 {
-    AudioSource backgroundMusic;
+    public AudioSource backgroundMusic;
 
     private void Awake()
     {
