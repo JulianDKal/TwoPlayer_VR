@@ -22,8 +22,8 @@ public class PhysicsHandJoint : MonoBehaviour
         // Setup rigidbody
         rb = GetComponent<Rigidbody>();
         rb.mass = 1f;
-        rb.drag = 5f;
-        rb.angularDrag = 5f;
+        rb.linearDamping = 5f;
+        rb.angularDamping = 5f;
         rb.useGravity = false;
         rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         rb.maxAngularVelocity = maxAngularVelocity;
