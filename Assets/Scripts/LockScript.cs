@@ -10,8 +10,13 @@ public class LockScript : NetworkBehaviour
     public void KeyInserted(SelectEnterEventArgs args)
     {
         Debug.Log("Key inserted");
-        chain.SetActive(false);
-        chain2.SetActive(false);
+        Rigidbody rb1 = chain.GetComponent<Rigidbody>();
+        Rigidbody rb2 = chain2.GetComponent<Rigidbody>();
+        rb1.isKinematic = false;
+        rb2.isKinematic = false;
+
+        //chain.SetActive(false);
+        //chain2.SetActive(false);
 
         if (IsServer)
         {

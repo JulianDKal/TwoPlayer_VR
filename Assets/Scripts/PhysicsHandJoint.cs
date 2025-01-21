@@ -52,7 +52,7 @@ public class PhysicsHandJoint : MonoBehaviour
         targetVelocity = Vector3.ClampMagnitude(targetVelocity, maxVelocity);
 
         // Apply position
-        rb.velocity = targetVelocity;
+        rb.linearVelocity = targetVelocity;
 
         // Handle rotation
         Quaternion rotationDelta = controllerTransform.rotation * Quaternion.Inverse(rb.rotation);
