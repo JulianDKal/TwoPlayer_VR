@@ -49,12 +49,14 @@ public class LockScript : NetworkBehaviour
     {
         NetworkObject networkObject = gameObject.GetComponent<NetworkObject>();
         NetworkObject chainNetworkObject = chain.GetComponent<NetworkObject>();
+        NetworkObject chain2NetworkObject = chain2.GetComponent<NetworkObject>();
         
         if (networkObject != null)
         {
             networkObject.Despawn(true);
         }
         if (chainNetworkObject != null) chainNetworkObject.Despawn(true);
+        if (chain2NetworkObject != null) chain2NetworkObject.Despawn(true);
         this.gameObject.SetActive(false);
     }
 }
