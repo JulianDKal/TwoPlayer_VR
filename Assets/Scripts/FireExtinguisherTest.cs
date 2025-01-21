@@ -1,6 +1,7 @@
+using Unity.Netcode;
 using UnityEngine;
 
-public class FireExtinguisherTest : MonoBehaviour
+public class FireExtinguisherTest : NetworkBehaviour
 {
     [Header("Target Objects")]
     public GameObject targetObjectWithParticles; // Parent object with child particle systems
@@ -8,7 +9,7 @@ public class FireExtinguisherTest : MonoBehaviour
     public GameObject objectToDisable; // Object to disable at 100% reduction
 
     public float reductionPercentage = 1f; // Reduction per collision
-    public float totalReduction = 0f; // Tracks cumulative reduction
+    public NetworkVariable<float> totalReduction = new NetworkVariable<float>(); // Tracks cumulative reduction
     public float reductionFactor = 1;
     public int collisionCount = 0; // Debugging collision counter
 
@@ -17,6 +18,7 @@ public class FireExtinguisherTest : MonoBehaviour
 
     private void Start()
     {
+        totalReduction.Value = 0f;
         if (targetLight != null)
         {
             initialLightIntensity = targetLight.intensity;
@@ -30,22 +32,50 @@ public class FireExtinguisherTest : MonoBehaviour
                 initialParticleRates[i] = particleSystems[i].emission.rateOverTime.constant;
             }
         }
+
+        totalReduction.OnValueChanged += (oldValue, newValue) =>
+        {
+            if (targetObjectWithParticles != null) ReduceEmissionRates();
+            if (targetLight != null) AdjustLightIntensity();
+            
+            if (totalReduction.Value >= 100)
+            {
+                if(objectToDisable != null) objectToDisable.SetActive(false);
+            }
+        };
     }
 
     private void OnParticleCollision(GameObject other)
     {
         collisionCount++;
-        totalReduction += reductionPercentage;
-        reductionFactor = Mathf.Clamp01(1 - totalReduction / 100);
+        if (IsServer)
+        {
+            UpdateReduction(reductionPercentage);
+        }
+        else
+        {
+            UpdateReductionServerRpc(reductionPercentage);
+        }
 
-        if (targetObjectWithParticles != null)
-            ReduceEmissionRates();
+        // if (totalReduction.Value >= 100 && objectToDisable != null)
+        //     objectToDisable.SetActive(false);
+    }
+    
+    [ServerRpc(RequireOwnership = false)]
+    private void UpdateReductionServerRpc(float reductionAmount)
+    {
+        UpdateReduction(reductionAmount);
+    }
+    
+    private void UpdateReduction(float reductionAmount)
+    {
+        totalReduction.Value += reductionAmount;
+        reductionFactor = Mathf.Clamp01(1 - totalReduction.Value / 100);
 
-        if (targetLight != null)
-            AdjustLightIntensity();
-
-        if (totalReduction >= 100 && objectToDisable != null)
+        if (totalReduction.Value >= 100 && objectToDisable != null)
+        {
             objectToDisable.SetActive(false);
+        }
     }
 
     private void ReduceEmissionRates()

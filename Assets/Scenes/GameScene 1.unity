@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 40294927}
   - component: {fileID: 40294930}
   - component: {fileID: 40294931}
+  - component: {fileID: 40294932}
   m_Layer: 0
   m_Name: fire extinguisher test
   m_TagString: Untagged
@@ -306,7 +307,8 @@ MonoBehaviour:
   targetLight: {fileID: 1631551827}
   objectToDisable: {fileID: 40294925}
   reductionPercentage: 0.3
-  totalReduction: 0
+  totalReduction:
+    m_InternalValue: 0
   reductionFactor: 1
   collisionCount: 0
 --- !u!54 &40294931
@@ -336,6 +338,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &40294932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40294925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1601247798
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &62746314 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6335326953106008033, guid: 2cf71293a2f3cd649aaaf9c25d008c64,
@@ -5622,6 +5645,12 @@ Transform:
   - {fileID: 830813068}
   m_Father: {fileID: 192015817}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &690481208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f71b52f22eae7254699175736000efc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1325688486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &715861889 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3398204787008936679, guid: 26d428e3da94b1b46921ef89484a6211,
@@ -7278,10 +7307,12 @@ MonoBehaviour:
   - {fileID: 446551112}
   - {fileID: 104657612}
   - {fileID: 68106892}
+  - {fileID: 199405217}
   playerObjects2:
   - {fileID: 1942189661}
   - {fileID: 391518227}
   - {fileID: 1821829358}
+  - {fileID: 690481208}
   - {fileID: 919132147723045901}
 --- !u!4 &911979649
 Transform:
@@ -10541,6 +10572,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5092345106116118151, guid: 0e913fed11e45614d91c9fd55e3dd8ab,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092345106116118151, guid: 0e913fed11e45614d91c9fd55e3dd8ab,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -12039,6 +12075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8126325101882447688, guid: 9c52cd7030055504ea9f43c53049cdb5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8126325101882447688, guid: 9c52cd7030055504ea9f43c53049cdb5,
         type: 3}
@@ -16111,7 +16152,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 32418e71bfd56de41834221e26239dca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.13
+      value: 2.029
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32418e71bfd56de41834221e26239dca,
         type: 3}
@@ -16121,7 +16162,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 32418e71bfd56de41834221e26239dca,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.505
+      value: -1.136
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32418e71bfd56de41834221e26239dca,
         type: 3}
