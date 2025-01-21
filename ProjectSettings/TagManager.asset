@@ -11,6 +11,7 @@ TagManager:
   - Destroyer
   - Player1
   - Player2
+  - HandCollision
   layers:
   - Default
   - TransparentFX

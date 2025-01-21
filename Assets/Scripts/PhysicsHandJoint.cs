@@ -10,10 +10,9 @@ public class PhysicsHandJoint : MonoBehaviour
     [SerializeField] private float rotationForce = 100f;
     [SerializeField] private float maxVelocity = 5f;
     [SerializeField] private float maxAngularVelocity = 10f;
-    [SerializeField] private bool hideController = true;
 
     private Rigidbody rb;
-    private MeshRenderer controllerRenderer;
+    public bool isPhysicsActive = false;
     private Vector3 previousPosition;
     private Quaternion previousRotation;
 
@@ -29,13 +28,7 @@ public class PhysicsHandJoint : MonoBehaviour
         rb.maxAngularVelocity = maxAngularVelocity;
         rb.maxDepenetrationVelocity = 2f;
 
-        // Optionally hide the controller visual
-        if (hideController && controllerTransform != null)
-        {
-            controllerRenderer = controllerTransform.GetComponentInChildren<MeshRenderer>();
-            if (controllerRenderer != null)
-                controllerRenderer.enabled = false;
-        }
+        DisablePhysics();
 
         // Initialize position and rotation
         transform.position = controllerTransform.position;
@@ -45,6 +38,20 @@ public class PhysicsHandJoint : MonoBehaviour
     }
 
     private void FixedUpdate()
+    {
+        if (isPhysicsActive)
+        {
+            UpdatePhysicsHand();
+        }
+        else
+        {
+            // Direct tracking when physics is inactive
+            transform.position = controllerTransform.position;
+            transform.rotation = controllerTransform.rotation;
+        }
+    }
+
+    private void UpdatePhysicsHand()
     {
         // Calculate target velocities
         Vector3 positionDelta = (controllerTransform.position - rb.position);
@@ -74,18 +81,25 @@ public class PhysicsHandJoint : MonoBehaviour
         previousRotation = transform.rotation;
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void EnablePhysics()
     {
-        // Optional: Add haptic feedback here if desired
+        if (!isPhysicsActive)
+        {
+            rb.isKinematic = false;
+            rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+            isPhysicsActive = true;
+        }
     }
 
-    private void OnDrawGizmos()
+    public void DisablePhysics()
     {
-        // Visual debug
-        if (controllerTransform != null)
+        if (isPhysicsActive)
         {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(transform.position, controllerTransform.position);
+            rb.isKinematic = true;
+            rb.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            isPhysicsActive = false;
         }
     }
 }
