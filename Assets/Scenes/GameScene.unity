@@ -440,8 +440,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.1104547, z: 1}
-  m_Center: {x: 0, y: 0.05522778, z: 0}
+  m_Size: {x: 1, y: 1.1104547, z: 1.0344673}
+  m_Center: {x: 0, y: 0.0552278, z: 0.017233664}
 --- !u!23 &40294928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 47151943}
   - component: {fileID: 47151945}
   - component: {fileID: 47151944}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: proximity detection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,6 +1032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113129116645377067, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1495,6 +1500,11 @@ PrefabInstance:
     - target: {fileID: 1918651382247903908, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622475134030929233, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
+        type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8235402363149527616, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
@@ -4900,6 +4910,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 9113129116645377067, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8109,6 +8124,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 9113129116645377067, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8348,6 +8368,131 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362816, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362818, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362820, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362822, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362824, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362826, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362828, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362830, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362832, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362834, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362836, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362838, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362840, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362842, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362844, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362846, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362912, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362914, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362916, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362918, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362920, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362922, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362924, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362926, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362928, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364,
         type: 3}
       propertyPath: m_Name
@@ -8355,8 +8500,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362932, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362934, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10371,8 +10531,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7878386063839823101, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
         type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7878386063839823101, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7698388132679679636, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -7698388132679679636, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
         type: 3}
@@ -10383,6 +10553,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6384087366738684093, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -6384087366738684093, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
         type: 3}
@@ -10411,6 +10586,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5121407423414573052, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
         type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5121407423414573052, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -10433,6 +10613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3510389118096741409, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -3510389118096741409, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
         type: 3}
@@ -10648,6 +10833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065602085236540297, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7065602085236540297, guid: b9eedea79a6d88642a9a88fe7c5dc88e,
         type: 3}
@@ -11062,7 +11252,7 @@ GameObject:
   - component: {fileID: 1325638424}
   - component: {fileID: 1325638426}
   - component: {fileID: 1325638425}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: proximity detection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12861,6 +13051,56 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 996515164}
     m_Modifications:
+    - target: {fileID: 109434732395284481, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284483, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284485, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284487, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284489, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284491, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284493, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284495, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284505, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284507, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
         type: 3}
       propertyPath: m_Name
@@ -12868,8 +13108,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284511, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284577, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284579, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284581, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284583, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284585, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284587, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284589, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284591, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284593, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284595, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284597, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284599, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284601, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284603, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284605, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284607, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b,
         type: 3}
@@ -13011,7 +13341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1526949081}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: attach point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15275,10 +15605,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -115888874261750242, guid: 32418e71bfd56de41834221e26239dca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 32418e71bfd56de41834221e26239dca,
         type: 3}
       propertyPath: m_Name
       value: fire extinguisher
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32418e71bfd56de41834221e26239dca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 32418e71bfd56de41834221e26239dca,
         type: 3}
@@ -16586,6 +16926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7622475134030929233, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
         type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622475134030929233, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
+        type: 3}
       propertyPath: m_Constraints
       value: 46
       objectReference: {fileID: 0}
@@ -17112,7 +17457,7 @@ GameObject:
   - component: {fileID: 1957543138}
   - component: {fileID: 1957543140}
   - component: {fileID: 1957543139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fire extinguisher foam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24646,7 +24991,7 @@ GameObject:
   - component: {fileID: 6990049973166094648}
   - component: {fileID: 704477216533456529}
   - component: {fileID: 1567596543263311512}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24834,7 +25179,7 @@ GameObject:
   - component: {fileID: 574089556391399913}
   - component: {fileID: 7438799810025207479}
   - component: {fileID: 4807339073338448412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25937,7 +26282,7 @@ GameObject:
   - component: {fileID: 3502204483636148065}
   - component: {fileID: 2000276845882144471}
   - component: {fileID: 2579551796119260067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poke Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28137,7 +28482,7 @@ GameObject:
   - component: {fileID: 466902556000333675}
   - component: {fileID: 5391844013503712005}
   - component: {fileID: 1298937378787755601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Teleport Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29709,7 +30054,7 @@ GameObject:
   - component: {fileID: 701103428784760485}
   - component: {fileID: 701103428784760484}
   - component: {fileID: 7866249642847306997}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29835,7 +30180,7 @@ GameObject:
   - component: {fileID: 701103428943562041}
   - component: {fileID: 701103428943562040}
   - component: {fileID: 701103428943562043}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30372,7 +30717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756059054373276411}
   - component: {fileID: 756059054373276412}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Link End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30438,7 +30783,7 @@ GameObject:
   - component: {fileID: 756059054483686909}
   - component: {fileID: 756059054483686848}
   - component: {fileID: 756059054483686911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30515,7 +30860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756059054510470826}
   - component: {fileID: 9046821954512593274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Affordance Callout UI Press
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30552,7 +30897,7 @@ GameObject:
   - component: {fileID: 756059055087758357}
   - component: {fileID: 533813691597125267}
   - component: {fileID: 3527651102643092753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lazy Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31088,7 +31433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453488317196294957}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tooltip Target Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31809,7 +32154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69700691475237312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tooltip Target Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31886,7 +32231,7 @@ GameObject:
   - component: {fileID: 949777718413485699}
   - component: {fileID: 15827197315398661}
   - component: {fileID: 4009608316990437255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lazy Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31938,7 +32283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949777718981213244}
   - component: {fileID: 8853094846203259884}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Affordance Callout Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32009,7 +32354,7 @@ GameObject:
   - component: {fileID: 949777719016755051}
   - component: {fileID: 949777719016755030}
   - component: {fileID: 949777719016755049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32061,7 +32406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949777719108288621}
   - component: {fileID: 949777719108288618}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Link End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32700,7 +33045,7 @@ GameObject:
   - component: {fileID: 2908951219719249794}
   - component: {fileID: 3899300393171756807}
   - component: {fileID: 5432243821140820464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LineVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33190,7 +33535,7 @@ GameObject:
   - component: {fileID: 1082672102608958536}
   - component: {fileID: 1082672102608958537}
   - component: {fileID: 7752442148981069336}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33342,7 +33687,7 @@ GameObject:
   - component: {fileID: 1082672103397791700}
   - component: {fileID: 1082672103397791701}
   - component: {fileID: 1082672103397791702}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35000,7 +35345,7 @@ GameObject:
   - component: {fileID: 479167147701176988}
   - component: {fileID: 6406556711842163927}
   - component: {fileID: 6393326326978968602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Teleport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35108,7 +35453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 42129050689146580}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poke Point Affordances
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37191,7 +37536,7 @@ GameObject:
   - component: {fileID: 8335039277527208260}
   - component: {fileID: 1975788509749710573}
   - component: {fileID: 534977989342670564}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37618,7 +37963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7579164874532530972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poke Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38983,7 +39328,7 @@ GameObject:
   - component: {fileID: 8875433803302359677}
   - component: {fileID: 6303122783437080541}
   - component: {fileID: 2906152999561488284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41400,7 +41745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5324726779005411875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41941,7 +42286,7 @@ GameObject:
   - component: {fileID: 2832120904793788147}
   - component: {fileID: 8187846887897282459}
   - component: {fileID: 6426162909786728435}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42213,7 +42558,7 @@ GameObject:
   - component: {fileID: 5917114448070441399}
   - component: {fileID: 3432233411342503714}
   - component: {fileID: 6289181297319910175}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43881,7 +44226,7 @@ GameObject:
   - component: {fileID: 5707066769133400147}
   - component: {fileID: 7310693720961670102}
   - component: {fileID: 8558421201943981646}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44018,7 +44363,7 @@ GameObject:
   - component: {fileID: 2379739348427397656}
   - component: {fileID: 2075443506334119972}
   - component: {fileID: 6419268336054054586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Move Forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44052,7 +44397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5671576413220923573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44392,7 +44737,7 @@ GameObject:
   - component: {fileID: 2926710869962495072}
   - component: {fileID: 3198191925777080472}
   - component: {fileID: 4788859050129772792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NearFar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44678,7 +45023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1486817583835170086}
   - component: {fileID: 6423668049140333279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pinch_Pointer_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44794,7 +45139,7 @@ GameObject:
   - component: {fileID: 2028339848243243405}
   - component: {fileID: 5389324345838948581}
   - component: {fileID: 7081342738613862541}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45061,7 +45406,7 @@ GameObject:
   - component: {fileID: 2336508270937164127}
   - component: {fileID: 2336508270937164126}
   - component: {fileID: 2336508270937164125}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45217,7 +45562,7 @@ GameObject:
   - component: {fileID: 2336508271080483523}
   - component: {fileID: 2336508271080483522}
   - component: {fileID: 4971033224406927507}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46387,7 +46732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2469332294528081638}
   - component: {fileID: 2469332294528081633}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Link End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46428,7 +46773,7 @@ GameObject:
   - component: {fileID: 2469332294551982560}
   - component: {fileID: 2469332294551982557}
   - component: {fileID: 2469332294551982562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46490,7 +46835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2469332294663168695}
   - component: {fileID: 6176158803154810215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Affordance Callout Teleport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46543,7 +46888,7 @@ GameObject:
   - component: {fileID: 2469332295155529736}
   - component: {fileID: 3409972236415591054}
   - component: {fileID: 1787472664849443084}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lazy Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46859,7 +47204,7 @@ GameObject:
   - component: {fileID: 1253460880040186744}
   - component: {fileID: 4196525111675917006}
   - component: {fileID: 158484543809367994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poke Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47247,7 +47592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3346673903460831024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tooltip Target Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47525,7 +47870,7 @@ GameObject:
   - component: {fileID: 1438458811258794782}
   - component: {fileID: 1660113238471788518}
   - component: {fileID: 8727654205530683270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NearFar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48017,7 +48362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2963791140483925414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tooltip Target Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48034,7 +48379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2663995674470796299}
   - component: {fileID: 2663995674470796300}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Link End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48092,7 +48437,7 @@ GameObject:
   - component: {fileID: 2663995674581173005}
   - component: {fileID: 2663995674581173040}
   - component: {fileID: 2663995674581173007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48177,7 +48522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2663995674612281434}
   - component: {fileID: 5983774160987154314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Affordance Callout Move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48214,7 +48559,7 @@ GameObject:
   - component: {fileID: 2663995675185277669}
   - component: {fileID: 3021382081302474851}
   - component: {fileID: 2194059763739737057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lazy Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49268,7 +49613,7 @@ GameObject:
   - component: {fileID: 2827336552204951637}
   - component: {fileID: 2827336552204951636}
   - component: {fileID: 4876534286290010629}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49394,7 +49739,7 @@ GameObject:
   - component: {fileID: 2827336552929821641}
   - component: {fileID: 2827336552929821640}
   - component: {fileID: 2827336552929821643}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49834,7 +50179,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4215
+    m_Bits: 6519
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -49897,7 +50242,7 @@ GameObject:
   - component: {fileID: 2847859420821605234}
   - component: {fileID: 7722769542962343708}
   - component: {fileID: 3745205721073082952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Teleport Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50561,7 +50906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7098818581278335405}
   - component: {fileID: 9105878297877488410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Joystick Affordances Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51935,7 +52280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4322899876669221290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poke Point Affordances
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53748,7 +54093,7 @@ GameObject:
   - component: {fileID: 2766942199492488482}
   - component: {fileID: 2388309264033591149}
   - component: {fileID: 1846320505920440587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Move Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55411,7 +55756,7 @@ GameObject:
   - component: {fileID: 3024673403448007940}
   - component: {fileID: 4561344003041674266}
   - component: {fileID: 9114835583804350029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56107,7 +56452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7052603880759932478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56205,7 +56550,7 @@ GameObject:
   - component: {fileID: 2211238710884133965}
   - component: {fileID: 2700931841945590072}
   - component: {fileID: 7421672358915246902}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Move Backward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56363,7 +56708,7 @@ GameObject:
   - component: {fileID: 5965861867400824792}
   - component: {fileID: 4183163332219869297}
   - component: {fileID: 2741111525478873208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56934,7 +57279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3738060541229333067}
   - component: {fileID: 5770858388675567350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Directions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57128,7 +57473,7 @@ GameObject:
   - component: {fileID: 6026009525300292589}
   - component: {fileID: 4280606153181426756}
   - component: {fileID: 2837322836190221389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57853,7 +58198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5247254485527187205}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poke Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58588,7 +58933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7449899968950822099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63256,7 +63601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3845327360186491199}
   - component: {fileID: 8708290859197816518}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pinch_Pointer_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64061,7 +64406,7 @@ GameObject:
   - component: {fileID: 2289117425378292424}
   - component: {fileID: 7800119227519217810}
   - component: {fileID: 5858131953026669401}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Near-Far Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65677,7 +66022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5683148895155700293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tooltip Target Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69871,7 +70216,7 @@ GameObject:
   - component: {fileID: 5157721623019556540}
   - component: {fileID: 5157721623019556541}
   - component: {fileID: 5157721623019556542}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70065,7 +70410,7 @@ GameObject:
   - component: {fileID: 5157721623735168288}
   - component: {fileID: 5157721623735168289}
   - component: {fileID: 2523055897566433136}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70286,7 +70631,7 @@ GameObject:
   - component: {fileID: 7544023318119670623}
   - component: {fileID: 7189242233401672370}
   - component: {fileID: 5643293958759282154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71326,7 +71671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6716643252271324938}
   - component: {fileID: 2052908473683296899}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Directions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71500,7 +71845,7 @@ GameObject:
   - component: {fileID: 2996056612883767376}
   - component: {fileID: 4707188207769075705}
   - component: {fileID: 6725207091695951856}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71933,7 +72278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1909877552858567094}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72572,7 +72917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011824791362600323}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72664,6 +73009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622475134030929233, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7622475134030929233, guid: 42dbb43945f4f4f41851b9f43e9bccc5,
         type: 3}
@@ -74156,7 +74506,7 @@ GameObject:
   - component: {fileID: 3398138325454353085}
   - component: {fileID: 5183634289736477972}
   - component: {fileID: 6622544797410577693}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74832,7 +75182,7 @@ GameObject:
   - component: {fileID: 901986179555929149}
   - component: {fileID: 1982062361850253401}
   - component: {fileID: 7619141927309050601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Move Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74850,7 +75200,7 @@ GameObject:
   - component: {fileID: 7773842019228058329}
   - component: {fileID: 7312984381334011077}
   - component: {fileID: 5563795344956881606}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turn Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75030,7 +75380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6661737176030767673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tooltip Target Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76830,7 +77180,7 @@ GameObject:
   - component: {fileID: 6142433909502035292}
   - component: {fileID: 6142433909502035293}
   - component: {fileID: 3579823618107762444}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76982,7 +77332,7 @@ GameObject:
   - component: {fileID: 6142433910427330240}
   - component: {fileID: 6142433910427330241}
   - component: {fileID: 6142433910427330242}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78817,7 +79167,7 @@ GameObject:
   - component: {fileID: 6372692988268934069}
   - component: {fileID: 6153651636284664115}
   - component: {fileID: 7132275515461935793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lazy Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78851,7 +79201,7 @@ GameObject:
   - component: {fileID: 6372692988739099229}
   - component: {fileID: 6372692988739099232}
   - component: {fileID: 6372692988739099231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78936,7 +79286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6372692988842027274}
   - component: {fileID: 3423458734199865050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Affordance Callout Grab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78972,7 +79322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6372692988983661915}
   - component: {fileID: 6372692988983661916}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Link End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79441,7 +79791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6025526794872900121}
   - component: {fileID: 1351302046978257139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Left Controller Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79688,7 +80038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6420456298753767790}
   - component: {fileID: 6420456298753767785}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Link End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79729,7 +80079,7 @@ GameObject:
   - component: {fileID: 6420456298797069928}
   - component: {fileID: 6420456298797069909}
   - component: {fileID: 6420456298797069930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79791,7 +80141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6420456298890937663}
   - component: {fileID: 3380164732767802095}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Affordance Callout Grab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79844,7 +80194,7 @@ GameObject:
   - component: {fileID: 6420456299401125760}
   - component: {fileID: 6056349677952091398}
   - component: {fileID: 7174443886747471492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lazy Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80879,7 +81229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 988314890572857703}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82403,7 +82753,7 @@ GameObject:
   - component: {fileID: 9138953261741993047}
   - component: {fileID: 950002946943823373}
   - component: {fileID: 3484873795944449478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Near-Far Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83568,7 +83918,7 @@ GameObject:
   - component: {fileID: 752175396138221831}
   - component: {fileID: 4357954739530718067}
   - component: {fileID: 3619263458881715481}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83780,7 +84130,7 @@ GameObject:
   - component: {fileID: 121309712132715597}
   - component: {fileID: 7595762414262922212}
   - component: {fileID: 8461814137547492333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84683,7 +85033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4328750388899938890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85368,7 +85718,7 @@ GameObject:
   - component: {fileID: 8229425640370919281}
   - component: {fileID: 4173236969199593423}
   - component: {fileID: 4771842715095591123}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86109,7 +86459,7 @@ GameObject:
   - component: {fileID: 504047963217952475}
   - component: {fileID: 7942616715228307826}
   - component: {fileID: 8232053839071625595}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88116,7 +88466,7 @@ GameObject:
   - component: {fileID: 7697021561337520480}
   - component: {fileID: 7477984572778511334}
   - component: {fileID: 5790472558704652388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lazy Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88173,7 +88523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7697021561782503310}
   - component: {fileID: 7697021561782503305}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Link End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88190,7 +88540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7697021561922059231}
   - component: {fileID: 2099692561326091279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Affordance Callout Quick Turn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88242,7 +88592,7 @@ GameObject:
   - component: {fileID: 7697021561941084296}
   - component: {fileID: 7697021561941084341}
   - component: {fileID: 7697021561941084298}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88994,7 +89344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4316632411244398378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90814,7 +91164,7 @@ GameObject:
   - component: {fileID: 4396397793461283444}
   - component: {fileID: 1744995590921346949}
   - component: {fileID: 96061931321764117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turn Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90833,7 +91183,7 @@ GameObject:
   - component: {fileID: 5282205597098115357}
   - component: {fileID: 6272837761742944664}
   - component: {fileID: 3058987860842241903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LineVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90954,7 +91304,7 @@ GameObject:
   - component: {fileID: 3548980797888317237}
   - component: {fileID: 6517816172791081997}
   - component: {fileID: 3550298455615112384}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turn Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92059,7 +92409,7 @@ GameObject:
   - component: {fileID: 4279270869589656904}
   - component: {fileID: 865393970644678785}
   - component: {fileID: 3373286450837589088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: South
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92190,7 +92540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9013325080039160997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tooltip Target Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92647,7 +92997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8971050718882893968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tooltip Target Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95483,7 +95833,7 @@ GameObject:
   - component: {fileID: 8383647336741950400}
   - component: {fileID: 8383647336741950401}
   - component: {fileID: 1209475230915129744}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95609,7 +95959,7 @@ GameObject:
   - component: {fileID: 8383647336997072988}
   - component: {fileID: 8383647336997072989}
   - component: {fileID: 8383647336997072990}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96324,7 +96674,7 @@ GameObject:
   - component: {fileID: 8445061476850424937}
   - component: {fileID: 8445061476850424936}
   - component: {fileID: 8445061476850424939}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96518,7 +96868,7 @@ GameObject:
   - component: {fileID: 8445061477177114613}
   - component: {fileID: 8445061477177114612}
   - component: {fileID: 1270783853371923877}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tooltip Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97189,7 +97539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9015184461947571026}
   - component: {fileID: 7224070701948218835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right Controller Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97697,7 +98047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6816086729327954930}
   - component: {fileID: 8974604473997665264}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Joystick Affordances Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99354,7 +99704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8682085974771675122}
   - component: {fileID: 8682085974771675125}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Link End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99391,7 +99741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8682085974908982179}
   - component: {fileID: 1120899496375747699}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Affordance Callout UI Press
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99451,7 +99801,7 @@ GameObject:
   - component: {fileID: 8682085974932349172}
   - component: {fileID: 8682085974932349129}
   - component: {fileID: 8682085974932349174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99530,7 +99880,7 @@ GameObject:
   - component: {fileID: 8682085975401203996}
   - component: {fileID: 8460720246983709594}
   - component: {fileID: 4825118239187523608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lazy Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99814,7 +100164,7 @@ GameObject:
   - component: {fileID: 6053771140621353147}
   - component: {fileID: 444715189806190632}
   - component: {fileID: 1368717478549666855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: South
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100005,7 +100355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2975301739375374166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Link Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
