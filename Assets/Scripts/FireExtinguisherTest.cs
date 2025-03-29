@@ -1,5 +1,5 @@
-using Unity.Netcode;
 using UnityEngine;
+using Unity.Netcode;
 
 public class FireExtinguisherTest : NetworkBehaviour
 {
@@ -7,7 +7,10 @@ public class FireExtinguisherTest : NetworkBehaviour
     public GameObject targetObjectWithParticles; // Parent object with child particle systems
     public Light targetLight; // Light to dim
     public GameObject objectToDisable; // Object to disable at 100% reduction
+    public GameObject fakeKey; // Object to disable at 100% reduction
+    public GameObject realKey; // Object to disable at 100% reduction
 
+    public GameObject key;
     public float reductionPercentage = 1f; // Reduction per collision
     public NetworkVariable<float> totalReduction = new NetworkVariable<float>(); // Tracks cumulative reduction
     public float reductionFactor = 1;
@@ -41,6 +44,8 @@ public class FireExtinguisherTest : NetworkBehaviour
             if (totalReduction.Value >= 100)
             {
                 if(objectToDisable != null) objectToDisable.SetActive(false);
+                if(fakeKey != null) fakeKey.SetActive(false);
+                if(realKey != null) realKey.SetActive(true);
             }
         };
     }
@@ -72,9 +77,11 @@ public class FireExtinguisherTest : NetworkBehaviour
         totalReduction.Value += reductionAmount;
         reductionFactor = Mathf.Clamp01(1 - totalReduction.Value / 100);
 
-        if (totalReduction.Value >= 100 && objectToDisable != null)
+        if (totalReduction.Value >= 100)
         {
-            objectToDisable.SetActive(false);
+            if(objectToDisable != null) objectToDisable.SetActive(false);
+            if(fakeKey != null) fakeKey.SetActive(false);
+            if(realKey != null) realKey.SetActive(true);
         }
     }
 

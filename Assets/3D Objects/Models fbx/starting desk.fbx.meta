@@ -3,7 +3,39 @@ guid: 8b2940122a41aec49becc2ab58c754cc
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black metal
+    second: {fileID: 2100000, guid: 29941096fbe44e64988ac0a51432d682, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue oak veneer
+    second: {fileID: 2100000, guid: 04402e16db596d744b33bec23deb3401, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gold
+    second: {fileID: 2100000, guid: 0233a16afd4a46444880ee23b335b127, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mug inside
+    second: {fileID: 6913529118709050255, guid: e03d4a4650d260847a56284a9af2a295,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mug outside
+    second: {fileID: -5651243908704382780, guid: e03d4a4650d260847a56284a9af2a295,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oak veneer
+    second: {fileID: 2100000, guid: 50a49bd7d7049bd46a6edc9faee455bf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -46,7 +78,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

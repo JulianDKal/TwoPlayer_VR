@@ -3,15 +3,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class FireExtinguisher : MonoBehaviour
 {
-    public ParticleSystem particleSystem;
+    public ParticleSystem foam;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
-        // grabbable.activated.AddListener(EnableParticles);
-        // grabbable.deactivated.AddListener(DisableParticles);
-        particleSystem.Stop();
+        foam.Stop();
     }
 
     // Update is called once per frame
@@ -22,17 +18,11 @@ public class FireExtinguisher : MonoBehaviour
 
     public void EnableParticles(ActivateEventArgs arg)
     {
-        // if (!particleSystem.isPlaying)
-        // {
-            particleSystem.Play();
-        // }
+        foam.Play();
     }
 
     public void DisableParticles(DeactivateEventArgs arg)
     {
-        // if (particleSystem.isPlaying)
-        // {
-            particleSystem.Stop();
-        // }
+        foam.Stop();
     }
 }

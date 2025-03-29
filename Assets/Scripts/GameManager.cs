@@ -11,23 +11,24 @@ public class GameManager : NetworkBehaviour
     public int puzzleOneScore = 0;
     public NetworkVariable<int> PuzzlesSolved = new NetworkVariable<int>();
     
+    private void Awake()
+    {
+        if(instance == null) instance = this;
+        else Destroy(this);
+    }
+    
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
 
         if (IsHost)
         {
-            // Initialize values only on the server
-            //PuzzleOneScore.Value = 0;
             PuzzlesSolved.Value = 0;
         }
     }
 
     private void Start()
     {
-        if(instance == null) instance = this;
-        else Destroy(this.gameObject);
-
         PuzzlesSolved.OnValueChanged += (oldValue, newValue) =>
         {
             if (newValue >= 3)
@@ -37,12 +38,11 @@ public class GameManager : NetworkBehaviour
         };
     }
     
-    // Method to update scores
     public void UpdatePuzzlesSolved()
     {
+        Debug.Log("puzzle score");
         if (IsServer)
         {
-            // Only the server updates the NetworkVariable
             PuzzlesSolved.Value++;
         }
     }

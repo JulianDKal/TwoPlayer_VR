@@ -11,17 +11,11 @@ public class ProximityTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("HandCollision"))
-        {
-            parentScript.EnablePhysics();
-        }
+        parentScript.EnablePhysics();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("HandCollision"))
-        {
-            parentScript.DisablePhysics();
-        }
+        parentScript.DisablePhysics();
     }
 }

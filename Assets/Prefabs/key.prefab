@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 657553650321188612}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: attach transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 8495455127885181781}
   - component: {fileID: 6206143926873866198}
   - component: {fileID: 4658834658136528234}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 9113129116645377067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.451, y: 1.165, z: 8.675}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -77,7 +77,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9113129116645377067}
-  m_Mesh: {fileID: 4882845845215443239, guid: 05baeb9f62eca1c49977d13de12c7f10, type: 3}
+  m_Mesh: {fileID: 7265974592398154989, guid: 05baeb9f62eca1c49977d13de12c7f10, type: 3}
 --- !u!23 &6363753946995443235
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -145,10 +145,10 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 32
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &7883190971205320122
 MonoBehaviour:
@@ -267,7 +267,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
-  m_ForceGravityOnDetach: 0
+  m_ForceGravityOnDetach: 1
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []

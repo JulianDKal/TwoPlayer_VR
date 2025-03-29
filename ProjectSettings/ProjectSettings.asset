@@ -958,11 +958,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 3bdf6e81-5fd1-4454-8e50-ba378b0e2eb3
+  cloudProjectId: 972939da-65de-4270-9830-658f0e89c73a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: VR Multiplayer
-  organizationId: juliandk
+  projectName: Parallel Perspectives
+  organizationId: blackcube4
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

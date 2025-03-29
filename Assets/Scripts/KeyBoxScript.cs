@@ -1,25 +1,20 @@
 using UnityEngine;
+
 public class KeyBoxScript : MonoBehaviour
 {
-    public GameObject key;
-    public Transform lidTransform;
-    public Collider lidCollider;
+    public Transform coverTransform;
+    public Collider coverCollider;
+    public Collider baseCollider;
     public float openSpeed = 50f;
     public float openAngle = -95f;
     public bool isOpening = false;
     private float currentAngle = 0f;
 
-    void Start()
+    private void Start()
     {
         EventManager.instance.puzzleOneCompletedEvent += DisableMe;
-        BoxCollider myCollider = gameObject.GetComponent<BoxCollider>();
-        BoxCollider[] colliders = key.GetComponents<BoxCollider>();
-        foreach (BoxCollider keyCollider in colliders)
-        {
-            Physics.IgnoreCollision(myCollider, keyCollider);
-        }
     }
-
+    
     void Update()
     {
         if (isOpening)
@@ -35,16 +30,17 @@ public class KeyBoxScript : MonoBehaviour
             }
             
             // Rotiert den Deckel um die Z-Achse
-            lidTransform.Rotate(0f, 0f, -rotationStep);
+            coverTransform.Rotate(0f, 0f, -rotationStep);
             currentAngle += rotationStep;
         }
     }
 
     public void DisableMe()
     {
-        if (lidCollider != null)
+        if (coverCollider != null)
         {
-            lidCollider.enabled = false;
+            coverCollider.enabled = false;
+            baseCollider.enabled = false;
         }
         isOpening = true;
         EventManager.instance.puzzleOneCompletedEvent -= DisableMe;

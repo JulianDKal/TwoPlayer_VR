@@ -7,12 +7,13 @@ public class EventManager : MonoBehaviour
 
     public event Action puzzleOneCompletedEvent;
     public event Action allPuzzlesCompletedEvent;
+
     private void Awake()
     {
         if(instance == null) instance = this;
         else Destroy(this);
     }
-
+    
     public void puzzleOneCompleted()
     {
         puzzleOneCompletedEvent?.Invoke();

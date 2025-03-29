@@ -10,8 +10,10 @@ public class PhysicsHandJoint : MonoBehaviour
     [SerializeField] private float rotationForce = 100f;
     [SerializeField] private float maxVelocity = 5f;
     [SerializeField] private float maxAngularVelocity = 10f;
+    [SerializeField] private float maxAllowedDistance = 1f;
 
     private Rigidbody rb;
+    private Collider handCollider;
     public bool isPhysicsActive = false;
     private Vector3 previousPosition;
     private Quaternion previousRotation;
@@ -20,6 +22,7 @@ public class PhysicsHandJoint : MonoBehaviour
     {
         // Setup rigidbody
         rb = GetComponent<Rigidbody>();
+        handCollider = GetComponent<Collider>();
         rb.mass = 1f;
         rb.linearDamping = 5f;
         rb.angularDamping = 5f;
@@ -41,6 +44,15 @@ public class PhysicsHandJoint : MonoBehaviour
     {
         if (isPhysicsActive)
         {
+            float distance = Vector3.Distance(transform.position, controllerTransform.position);
+            if (distance > maxAllowedDistance) 
+            {
+                handCollider.enabled = false;
+            }
+            else
+            {
+                handCollider.enabled = true;
+            }
             UpdatePhysicsHand();
         }
         else
@@ -95,10 +107,10 @@ public class PhysicsHandJoint : MonoBehaviour
     {
         if (isPhysicsActive)
         {
-            rb.isKinematic = true;
-            rb.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = true;
+            rb.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
             isPhysicsActive = false;
         }
     }

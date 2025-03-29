@@ -11,7 +11,6 @@ TagManager:
   - Destroyer
   - Player1
   - Player2
-  - HandCollision
   - SpawnPointChanger
   layers:
   - Default
@@ -26,8 +25,8 @@ TagManager:
   - Maze Room
   - Teleportation Plane
   - Key
-  - 
-  - 
+  - Hand Collision
+  - Physics Hand
   - 
   - 
   - 
